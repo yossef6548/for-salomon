@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<head>
+    <meta charset="UTF-8">
+    <title>רשימת ציוד לטיול סקי בגאורגיה</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            margin: 0;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        
+        .checklist {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .checklist li {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .checklist li:hover {
+            transform: translateX(-5px);
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .checkbox {
+            margin-left: 15px;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+        
+        .category {
+            font-weight: bold;
+            color: white;
+            margin: 20px 0 10px 0;
+            font-size: 1.2em;
+            background: #3498db;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        
+        .completed {
+            text-decoration: line-through;
+            opacity: 0.7;
+        }
+
+        .print-button {
+            background: #2ecc71;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 20px 0;
+            font-size: 1.1em;
+            width: 100%;
+        }
+
+        .progress {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 1.2em;
+            color: #2c3e50;
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+            .container {
+                box-shadow: none;
+            }
+            .print-button {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>רשימת ציוד לטיול סקי בגאורגיה</h1>
+        <button class="print-button" onclick="window.print()">הדפס רשימה</button>
+
+        <div class="category">מסמכים ואמצעי תשלום</div>
+        <ul class="checklist">
+            <li><input type="checkbox" class="checkbox"><span>דרכון בתוקף</span></li>
+            <li><input type="checkbox" class="checkbox"><span>ביטוח נסיעות עם כיסוי סקי</span></li>
+            <li><input type="checkbox" class="checkbox"><span>כרטיס אשראי בינלאומי</span></li>
+            <li><input type="checkbox" class="checkbox"><span>מזומן (דולרים ולארי גאורגי)</span></li>
+            <li><input type="checkbox" class="checkbox"><span>צילום/סריקה של המסמכים החשובים</span></li>
+        </ul>
+
+        <div class="category">תקשורת וטכנולוגיה</div>
+        <ul class="checklist">
+            <li><input type="checkbox" class="checkbox"><span>כרטיס SIM מקומי או eSIM</span></li>
+            <li><input type="checkbox" class="checkbox"><span>מטען לטלפון</span></li>
+            <li><input type="checkbox" class="checkbox"><span>סוללה ניידת</span></li>
+            <li><input type="checkbox" class="checkbox"><span>אוזניות</span></li>
+            <li><input type="checkbox" class="checkbox"><span>מתאם חשמל אוניברסלי</span></li>
+            <li><input type="checkbox" class="checkbox"><span>מצלמה</span></li>
+            <li><input type="checkbox" class="checkbox"><span>הורדת שפת גיאורגית בגוגל טרנסלייט</span></li>
+            <li><input type="checkbox" class="checkbox"><span>הורדת מפות גאורגיה בגוגל מפות</span></li>
+        </ul>
+
+        <div class="category">ביגוד בסיסי</div>
+        <ul class="checklist">
+            <li><input type="checkbox" class="checkbox"><span>חולצות (5)</span></li>
+            <li><input type="checkbox" class="checkbox"><span>מכנסיים (5)</span></li>
+            <li><input type="checkbox" class="checkbox"><span>גרביים (5 זוגות)</span></li>
+            <li><input type="checkbox" class="checkbox"><span>תחתונים (5)</span></li>
+            <li><input type="checkbox" class="checkbox"><span>פיג'מה</span></li>
+        </ul>
+
+        <div class="category">ביגוד לסקי</div>
+        <ul class="checklist">
+            <li><input type="checkbox" class="checkbox"><span>חולצות תרמיות</span></li>
+            <li><input type="checkbox" class="checkbox"><span>מכנסיים תרמיים</span></li>
+            <li><input type="checkbox" class="checkbox"><span>סוודר או פליז חם</span></li>
+            <li><input type="checkbox" class="checkbox"><span>מעיל סקי</span></li>
+            <li><input type="checkbox" class="checkbox"><span>כובע גרב</span></li>
+            <li><input type="checkbox" class="checkbox"><span>מחמם צוואר</span></li>
+            <li><input type="checkbox" class="checkbox"><span>כפפות סקי</span></li>
+            <li><input type="checkbox" class="checkbox"><span>צעיף</span></li>
+            <li><input type="checkbox" class="checkbox"><span>משקפי שמש/משקפי סקי</span></li>
+            <li><input type="checkbox" class="checkbox"><span>גרביים תרמיות</span></li>
+        </ul>
+
+        <div class="category">ציוד דת</div>
+        <ul class="checklist">
+            <li><input type="checkbox" class="checkbox"><span>תפילין</span></li>
+            <li><input type="checkbox" class="checkbox"><span>סידור</span></li>
+        </ul>
+
+    <div class="category">טיפוח והיגיינה</div>
+<ul class="checklist">
+    <li><input type="checkbox" class="checkbox"><span>קרם הגנה לפנים (SPF גבוה)</span></li>
+    <li><input type="checkbox" class="checkbox"><span>קרם הגנה לשפתיים</span></li>
+    <li><input type="checkbox" class="checkbox"><span>ווזלין</span></li>
+    <li><input type="checkbox" class="checkbox"><span>תרופות אישיות</span></li>
+    <li><input type="checkbox" class="checkbox"><span>מוצרי היגיינה אישית</span></li>
+    <li><input type="checkbox" class="checkbox"><span>משחת שיניים ומברשת</span></li>
+    <li><input type="checkbox" class="checkbox"><span>מגבונים לחים</span></li>
+    <li><input type="checkbox" class="checkbox"><span>דאודורנט</span></li>
+</ul>
+
+        <div class="category">תיקים וציוד נוסף</div>
+        <ul class="checklist">
+            <li><input type="checkbox" class="checkbox"><span>תיק גב קטן ליום יום</span></li>
+            <li><input type="checkbox" class="checkbox"><span>שקית לכביסה מלוכלכת</span></li>
+            <li><input type="checkbox" class="checkbox"><span>בקבוק מים רב-פעמי</span></li>
+            <li><input type="checkbox" class="checkbox"><span>כרית צוואר לטיסה</span></li>
+        </ul>
+
+        <div class="progress">
+            <span id="completed-items">0</span> מתוך <span id="total-items">0</span> פריטים נארזו
+        </div>
+    </div>
+
+    <script>
+        function updateProgress() {
+            const total = document.querySelectorAll('.checkbox').length;
+            const checked = document.querySelectorAll('.checkbox:checked').length;
+            document.getElementById('total-items').textContent = total;
+            document.getElementById('completed-items').textContent = checked;
+        }
+
+        document.querySelectorAll('.checkbox').forEach(checkbox => {
+            checkbox.addEventListener('change', function() {
+                const listItem = this.parentElement;
+                const textSpan = listItem.querySelector('span');
+                if (this.checked) {
+                    textSpan.classList.add('completed');
+                } else {
+                    textSpan.classList.remove('completed');
+                }
+                updateProgress();
+            });
+        });
+
+        // Initialize progress counter
+        updateProgress();
+    </script>
+</body>
+</html>
